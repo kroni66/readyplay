@@ -10,6 +10,7 @@ import { AnimationRemotePlayer } from './AnimationRemotePlayer'
 import { animationSet } from '../hooks/useRPMAnimations'
 import { PlayroomJoystick } from './PlayroomJoystick'
 import { Player } from './Player'
+import Box from './Box'
 
 /**
  * Keyboard control preset
@@ -60,6 +61,7 @@ export default function OpenMapExperience({ onReady }) {
           )}
         <Map onMapReady={() => setMapReady(true)} />
         <RoughPlane />
+        <Box position={[0, 1, 0]} />
       </Physics>
     </>
   )
